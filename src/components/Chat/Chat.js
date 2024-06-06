@@ -19,7 +19,7 @@ const Chat = ({ location }) => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [flag, setFlag] = useState(0);
-  const ENDPOINT = "http://localhost:8000/";
+  const ENDPOINT = "https://chatappbackend-puw9.onrender.com/";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
